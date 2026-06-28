@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    scale: 96%;
+}
+.article-dashbaord {
+    background-color: rgba(0, 0, 0, 0.305);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border-radius: 3px;
+
+}
+.right-article {
+    direction: rtl;
+    font-family: "Cairo", sans-serif;
+}
+.left-article {
+    direction: ltr;
+}
+.article-body {
+    margin-top: 2rem;
+}
+.right-body {
+    margin-right: 0.5rem;
+}
+.left-body {
+    margin-left: 0.5rem;
+}
+.article-body p {
+    font-weight: 500;
+    line-height: 2.8rem;
+}
+h2 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1.7rem;
+}

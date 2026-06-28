@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lnisma_</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <script>
+        function goto(link){
+            window.location.href = (link);
+        };
+    window.onload = function() {
+    const quote = document.getElementById("quote");
+
+    const getQuote = () => {
+        fetch("https://api.kanye.rest")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data); 
+                quote.textContent = data.quote; 
+            })
+            .catch(error => console.error("Error fetching quote:", error));
+    }
+    getQuote(); 
+}
+
+    </script>
+</head>
+<body >
+   
+    <div class="profile-parent">
+        <div class="profile-section">
+            <div class="profile-all">
+            <img src="img/profile4.jpg">
+            <div class="profile-details">
+            <label>lnisma_</label>
+            <p>☥</p>
+            <p><a href="https://discord.gg/qXM2GBN8rc">discord</a></p>
+                <audio controls>
+                <source src="https://g.top4top.io/m_3511itk651.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            </div><br>
+            <center><div class="quote-here"><label id="quote">hello!</label></div></center>
+            <div class="bio-section">
+                <label>biography.</label>
+                <div class="bio-dashbaord dash">
+				  <center><label>lnismaaaa</label></center>
+				  <p>
+				    Hi, and welcome to my blog! <br>
+				    My name is Lnisma, and here I share my thoughts, ideas, and articles. <br>
+				    I love reading and writing, and through my articles I hope to give you clear answers 
+				    to questions you might have,<br> or maybe spark new ideas you haven’t thought of before. <br>
+				    You can check my latest posts in the updates dashboard below, <br>
+				    and I’d love to hear your feedback—feel free to reach out through the contact dashboard. <br>
+				  </p>
+				</div> 
+            </div>
+            <div class="updates-section">
+                <label>updates.</label>
+                <div class="updates-dashboard">
+                    <p onclick="goto('article')"> - dark algorithms and social media article ( arabic version )
+                    </p>
+                    <br><center>
+                   
+                    <button>all updates.</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <div class="awards-section">
+            <label>progress.</label>
+            <div class="level-dashboard dash">
+                <div class="level-elements">
+                <img src="img/level.png" alt="">
+                <div class="level-labels">
+                <label>writing</label> 
+                <p>writing article.</p>
+                </div>
+                </div>
+            </div>
+            <div class="achive-section">
+                <label>life.</label>
+                <div class="achive-dashboard dash">
+                    <div class="achive-part">
+                    <label>february books</label>
+                    <p>2</p>
+                    </div>
+                    <div class="achive-part">
+                    <label>age</label>
+                    <p>18</p>
+                    </div>
+                    <div class="achive-part">
+                    <label>projects</label>
+                    <p>5</p>
+                    </div>
+                    <div class="achive-part">
+                    <label>college year</label>
+                    <p>1n</p>
+                    </div>
+                    <div class="achive-part">
+                    <label>experience</label>
+                    <p>6.7</p>
+                    </div>
+ 
+                </div>
+            </div>
+                        <div class="achive-section">
+                <label>contact.</label>
+                <div class="achive-dashboard dash">
+                    <div class="achive-part">
+                    <label>soon..</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./oneko.js"></script>
+</body>
+</html>
